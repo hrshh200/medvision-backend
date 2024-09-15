@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 
 app.get('/', (req, res) => {
-    res.send("Hello Server here!!");
+    res.send("Hello MedVision here!");
 });
 
 const port = process.env.PORT || 3001;

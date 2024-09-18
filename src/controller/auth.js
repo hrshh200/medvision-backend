@@ -3,6 +3,8 @@ const User = require("../models/user");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 // const shortid = require("shortid");
+
+
 const signUp = async (req, res) => {
     const { name, email, password } = req.body;
     console.log(req.body);
@@ -36,6 +38,7 @@ const signUp = async (req, res) => {
         });
     }
 };
+
 
 const signIn = async (req, res) => {
     try {
